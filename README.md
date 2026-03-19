@@ -39,7 +39,7 @@ You will need a C compiler installed, such as GCC or Clang.
 ### Compilation
 ```bash
 
-gcc main.c -o tictactoe
+gcc main.c -o main
 
 ```
 ---
@@ -49,14 +49,14 @@ gcc main.c -o tictactoe
 ### Linux/macOS
 ```bash
 
-./tictactoe
+./main
 
 ```
 
 ### Windows
 ```bash
 
-.\tictactoe.exe
+.\main
 
 ```
 ---
