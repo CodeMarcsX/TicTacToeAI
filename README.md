@@ -1,75 +1,85 @@
 # 🎮 Tic Tac Toe (Machine Learning)
 
-Este é um jogo da velha clássico desenvolvido em C que utiliza **Aprendizado por Reforço (Q-Learning)** para treinar uma inteligência artificial. O programa oferece uma interface colorida via terminal e três níveis de dificuldade baseados no volume de treinamento da IA.
+This is a classic Tic Tac Toe game developed in C that uses **Reinforcement Learning (Q-Learning)** to train an artificial intelligence. The program offers a colorful terminal interface and three difficulty levels based on the AI's training volume.
 
 ---
 
 ## ✨ Features
 
-- **Modo Player vs Player:** Jogue localmente contra um amigo.
-- **Modo Player vs IA:** Enfrente uma IA que aprende jogando contra si mesma através de milhares de simulações.
-- **Níveis de Dificuldade:**
-  - **Easy:** Treinamento rápido (500 iterações).
-  - **Normal:** Equilíbrio entre tempo e habilidade (3.000 iterações).
-  - **Hard:** IA altamente competitiva (200.000 iterações).
-- **Interface Imersiva:** Efeito *typewriter* (digitação) e cores ANSI para melhor feedback visual.
-- **Cross-Platform:** Sistema inteligente de limpeza de tela compatível com Windows, Linux e macOS.
+- **Player vs Player Mode:** Play locally against a friend.
+- **Player vs AI Mode:** Face an AI that learns by playing against itself through thousands of simulations.
+- **Difficulty Levels:**
+  - **Easy:** Fast training (500 iterations).
+  - **Normal:** Balance between time and skill (3,000 iterations).
+  - **Hard:** Highly competitive AI (200,000 iterations).
+- **Immersive Interface:** *Typewriter* effect (typing) and ANSI colors for better visual feedback.
+- **Cross-Platform:** Smart screen clearing system compatible with Windows, Linux, and macOS.
 
 ---
 
-## ⬇️ Setup (Clonando o Repositório)
+## ⬇️ Setup (Cloning the Repository)
 
-Se este projeto estiver hospedado no GitHub, você pode cloná-lo para sua máquina local:
+If this project is hosted on GitHub, you can clone it to your local machine:
 
 ```bash
-git clone https://github.com/CodeMarcsX/TicTacToeAI.git
+
+git clone https://github.com/CodeMarcsX/TicTacToeAI.git  
 cd Tic-Tac-Toe-AI
+
 ```
 
 ---
 
-### 🛠️ Como Compilar e Rodar
-Pré-requisitos
+## 🛠️ How to Compile and Run
 
-Você precisará de um compilador C instalado, como o GCC ou Clang.
-Compilação
+### Requirements
 
+You will need a C compiler installed, such as GCC or Clang.
+
+### Compilation
 ```bash
+
 gcc main.c -o tictactoe
-```
 
+```
 ---
 
-### Execução
+## ▶️ Execution
 
-No Linux/macOS:
-Bash
-
+### Linux/macOS
 ```bash
+
 ./tictactoe
-```
-No Windows:
 
+```
+
+### Windows
 ```bash
+
 .\tictactoe.exe
-```
 
+```
 ---
 
-⚠️ Important: If the banner or special characters appear "bugged" in the terminal, first set the code page to UTF-8:
+⚠️ **Important:** If the banner or special characters appear "glitched" in the terminal, first set the code page to UTF-8:
+
 ```bash
+
 chcp 65001
+
 ```
 
 ---
 
-## 🚀 Como Jogar
+## 🚀 How to Play
 
-1. Escolha o Modo: Selecione Player vs Player ou Player vs IA no menu principal.
+1. **Choose Mode:** Select Player vs Player or Player vs AI in the main menu.
 
-2. Treinamento: Se escolher a IA, aguarde alguns instantes enquanto ela "aprende" as melhores jogadas.
+2. **Training:** If you choose AI, wait a few moments while it "learns" the best moves.
 
-3. Entrada de Posições: O tabuleiro utiliza o mapeamento numérico de 1 a 9:
+3. **Position Input:** The board uses a numeric mapping from 1 to 9:
+
+
 ```bash
       1 | 2 | 3
      ---+---+---
@@ -78,23 +88,25 @@ chcp 65001
       7 | 8 | 9
 ```
 
-Reiniciar: Ao final, basta digitar 'y' para uma revanche ou 'n' pra voltar ao menu iniciar.
+
+**Restart:** At the end, simply type `y` for a rematch or `n` to return to the main menu.
 
 ---
 
-## 🧠 Lógica da IA (Q-Learning)
+## 🧠 AI Logic (Q-Learning)
 
-### A IA utiliza uma Q-Table para gerenciar os 19.683 estados possíveis do jogo.
+The AI uses a Q-Table to manage the 19,683 possible game states.
 
-Ela aprende através de um sistema de recompensas:
+It learns through a reward system:
 
-- Vitória: +1.0 ponto.
+- Win: +1.0 point  
+- Draw: +0.3 points  
+- Loss: -1.0 point  
 
-- Empate: +0.3 pontos.
-
-- Derrota: -1.0 ponto.
-
-As jogadas são escolhidas com base nos valores aprendidos, com um fator de "ruído" (aleatoriedade) para garantir que ela explore novas estratégias em vez de repetir sempre os mesmos movimentos.
+Moves are chosen based on learned values, with a "noise" factor (randomness) to ensure it explores new strategies instead of always repeating the same moves.
 
 ---
-### Desenvolvido como um estudo de Inteligência Artificial e lógica de programação em C.
+
+## 📚 About
+
+Developed as a study of Artificial Intelligence and programming logic in C.
