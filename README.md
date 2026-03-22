@@ -109,7 +109,7 @@ Moves are chosen based on learned values, with a "noise" factor (randomness) to 
 
 ## 📸 Preview
 
-...
+https://github.com/user-attachments/assets/eab7fc07-8a76-43d6-b652-cf7ddfbb1fcd
 
 ---
 
