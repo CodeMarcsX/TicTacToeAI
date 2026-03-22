@@ -109,9 +109,7 @@ Moves are chosen based on learned values, with a "noise" factor (randomness) to 
 
 ## 📸 Preview
 
-<video src="Preview/Prev.mp4" width="100%" controls>
-  Seu navegador não suporta o elemento de vídeo.
-</video>
+[[Project Preview]](Preview/Prev.mp4)
 
 ---
 
